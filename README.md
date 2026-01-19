@@ -40,24 +40,28 @@ HTML & CSS
 
 Jupyter Notebook
 
-📂 Project Structure
+## 📂 Project Structure
+
+```text
 project/
 │
 ├── notebooks/
 │   ├── age_model_training.ipynb
 │   ├── gender_model_training.ipynb
-│   ├── emotion_model_training.ipynb
+│   └── emotion_model_training.ipynb
 │
 ├── app.py
+│
 ├── ads/
 │   ├── male_20_30.jpg
 │   ├── female_25_32.jpg
-│   ├── default.jpg
+│   └── default.jpg
 │
 ├── templates/
 │   └── index.html
 │
 └── README.md
+
 
 
 📊 Datasets Used
