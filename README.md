@@ -1,44 +1,38 @@
 # AdVision
 
-🎯 Real-Time Targeted Advertisement System
-Using Age, Gender & Emotion Detection
-📌 Project Overview
+# 🎯 Real-Time Targeted Advertisement System  
+### Using Age, Gender & Emotion Detection
 
-This project is a real-time targeted advertisement system that analyzes a user’s age, gender, and emotion from a live camera feed and displays relevant advertisements accordingly.
+---
 
-The system uses deep learning models trained on face images and integrates them into a web-based application.
+## 📌 Project Overview
+This project is a **real-time targeted advertisement system** that analyzes a user’s **age, gender, and emotion** from a live camera feed and displays **relevant advertisements** accordingly.
 
-🚀 Features
+The system uses **deep learning models** trained on facial image datasets and integrates them into a **web-based application**.
 
-Real-time face detection using webcam
+---
 
-Age group prediction
+## 🚀 Features
+- Real-time **face detection** using webcam  
+- **Age group prediction**  
+- **Gender classification**  
+- **Emotion recognition**  
+- Dynamic **targeted advertisement display**  
+- Web-based interface with:
+  - Camera feed on the **left**
+  - Advertisement panel on the **right**
 
-Gender classification
+---
 
-Emotion recognition
+## 🧠 Technologies Used
+- Python  
+- TensorFlow / Keras  
+- OpenCV  
+- Flask  
+- HTML & CSS  
+- Jupyter Notebook  
 
-Dynamic targeted advertisement display
-
-Web-based interface with:
-
-Camera feed on the left
-
-Advertisement panel on the right
-
-🧠 Technologies Used
-
-Python
-
-TensorFlow / Keras
-
-OpenCV
-
-Flask (for web application)
-
-HTML & CSS
-
-Jupyter Notebook
+---
 
 ## 📂 Project Structure
 
@@ -62,35 +56,33 @@ project/
 │
 └── README.md
 ```
-
+---
 
 📊 Datasets Used
 
 UTKFace Dataset – for age and gender prediction
-
 FER2013 Dataset – for emotion recognition
 
 Note: Due to size limitations, datasets are not included in this repository.
 
+---
+
 🧪 Model Training
 
-The deep learning models were trained using Jupyter Notebook (.ipynb) files, which are included in this repository.
+The deep learning models were trained using Jupyter Notebook (.ipynb) files.
 
 Each notebook contains:
+- Data loading
+- Image preprocessing
+- Model architecture
+- Training and evaluation
 
-Data loading
+Note: Trained .h5 model files are not uploaded due to GitHub file size restrictions.
 
-Preprocessing
-
-Model architecture
-
-Training process
-
-Evaluation
-
-Trained .h5 model files are not uploaded due to GitHub file size restrictions.
+---
 
 ▶️ How to Run the Application
+
 1️⃣ Install dependencies
 pip install flask opencv-python tensorflow numpy
 
@@ -100,50 +92,35 @@ python app.py
 3️⃣ Open in browser
 http://127.0.0.1:5000
 
+---
+
 🎯 Advertisement Logic
 
-Advertisements are selected using rule-based logic based on:
+Ads are selected based on:
+- Age group
+- Gender
+- Emotion
 
-Predicted age group
-
-Predicted gender
-
-Predicted emotion
-
-Example:
-
+Examples:
 Male, Age 20–30, Happy → Fitness / Lifestyle Ads
-
 Female, Age 25–32, Sad → Entertainment / Wellness Ads
 
+---
+
 🔒 Privacy & Ethics
-
-No images or video data are stored
-
-Processing happens in real time
-
-The system is intended for educational purposes only
+- No data is stored
+- Processing is real time
+- Educational use only
 
 🎓 Academic Use
-
-This project was developed as part of an academic / college project to demonstrate:
-
-Computer vision
-
-Deep learning
-
-Real-time systems
-
-Personalized recommendation concepts
+- Computer Vision
+- Deep Learning
+- Real-Time Systems
+- Recommendation Concepts
+  
+---
 
 ✨ Future Enhancements
-
-Deploy on cloud
-
-Add multiple face support
-
-Improve ad recommendation logic
-
-Store analytics dashboards
-
-Replace rule-based ads with ML-based recommendation
+- Cloud deployment
+- Multiple face support
+- Better ad logic
