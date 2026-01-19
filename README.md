@@ -112,6 +112,8 @@ Female, Age 25–32, Sad → Entertainment / Wellness Ads
 - Processing is real time
 - Educational use only
 
+---
+
 🎓 Academic Use
 - Computer Vision
 - Deep Learning
