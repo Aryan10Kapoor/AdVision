@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Targeted Advertisement System</title>
+
+    <style>
+        body {
+            background-color: #111;
+            color: white;
+            font-family: Arial;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        .panel {
+            width: 48%;
+            border: 2px solid #00ff99;
+            padding: 10px;
+            text-align: center;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+    <!-- FORCE AD REFRESH -->
+    <script>
+        setInterval(() => {
+            document.getElementById("adImage").src =
+                "/ad_feed?t=" + new Date().getTime();
+        }, 1000);  // refresh every 1 second
+    </script>
+</head>
+
+<body>
+
+<h2>Real-Time Targeted Advertisement System</h2>
+
+<div class="container">
+
+    <!-- CAMERA -->
+    <div class="panel">
+        <h3>Live Camera Feed</h3>
+        <img src="{{ url_for('video_feed') }}">
+    </div>
+
+    <!-- ADS -->
+    <div class="panel">
+        <h3>Targeted Advertisement</h3>
+        <img id="adImage" src="{{ url_for('ad_feed') }}">
+    </div>
+
+</div>
+
+</body>
+</html>
